@@ -1,0 +1,14 @@
+{
+  "name": "style-guide-1-frontmatter",
+  "version": "0.1.0",
+  "description": "Exploring a method to convert yaml fronted HTML components into a JSON file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Heydon Pickering",
+  "license": "ISC",
+  "devDependencies": {
+    "lodash": "^3.10.1"
+  }
+}

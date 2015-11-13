@@ -1,0 +1,10 @@
+---
+name: Nesting
+description: A test to see what happens to tab characters.
+tags: ['component', 'custom']
+---
+<div class="parent">
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+</div>

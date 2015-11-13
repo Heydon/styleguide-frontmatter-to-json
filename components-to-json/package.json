@@ -1,0 +1,16 @@
+{
+  "name": "components-to-json",
+  "version": "0.1.0",
+  "description": "Take the yaml fronted HTML components and build a JSON file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Heydon Pickering",
+  "license": "ISC",
+  "devDependencies": {
+    "yaml-front-matter": "^3.2.3"
+  },
+  "dependencies": {}
+}
