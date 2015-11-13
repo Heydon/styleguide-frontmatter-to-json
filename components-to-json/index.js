@@ -21,10 +21,11 @@ var compile = function(directory, outputFile) {
         componentArray.push(object);
       });
 
-      componentArray = _.shuffle(componentArray);
-      json = JSON.stringify(componentArray, null, 4);
+      var json = {};
+      json.components = _.shuffle(componentArray);
+      output = JSON.stringify(json, null, 4);
 
-      fs.writeFileSync(outputFile, json, 'utf8');
+      fs.writeFileSync(outputFile, output, 'utf8');
 
     }
 
