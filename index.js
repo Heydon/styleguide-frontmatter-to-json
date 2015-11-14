@@ -1,5 +1,7 @@
-var Compile = require('./components-to-json');
-var Render = require('./render-json');
+var Compile = require('./lib/components-to-json');
+var Render = require('./lib/render-json');
 
-var compile = new Compile('./components', './components.json');
-var render = new Render('./components.json', './index.html');
+// Convert yaml snippets to json
+Compile('./components', './components.json');
+// Render json via handlebars
+Render('./components.json', './index.html');

@@ -8,17 +8,38 @@
 		<title>This Is A Web Page</title>
 	</head>
   <body>
+		<h1>Title For Styleguide</h1>
 		<ul class="components">
 				<li class="component">
-					<h2>Headings levels</h2>
-					<div class="component-demo" id="headings-levels">
-						
-<h1>First level heading</h1>
-<h2>Second level heading</h2>
-<h3>Third level heading</h3>
-<h3>Fourth level heading</h3>
-
+					<h2>Nesting</h2>
+					<div class="component-demo" id="nesting"></div>
+					<script>
+						(function(){
+							var shadowHost = document.getElementById('#nesting');
+							var shadowRoot = shadowHost.createShadowRoot();
+							shadowRoot.innerHTML = '<div class="parent"><div class="child"></div><div class="child"></div><div class="child"></div></div>';
+						})();
+					</script>
+					<div class="component-code">
+						<pre></code>
+&lt;div class&#x3D;&quot;parent&quot;&gt;
+  &lt;div class&#x3D;&quot;child&quot;&gt;&lt;/div&gt;
+  &lt;div class&#x3D;&quot;child&quot;&gt;&lt;/div&gt;
+  &lt;div class&#x3D;&quot;child&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 					</div>
+				</li>
+				<li class="component">
+					<h2>Headings levels</h2>
+					<div class="component-demo" id="headings-levels"></div>
+					<script>
+						(function(){
+							var shadowHost = document.getElementById('#headings-levels');
+							var shadowRoot = shadowHost.createShadowRoot();
+							shadowRoot.innerHTML = '<h1>First level heading</h1><h2>Second level heading</h2><h3>Third level heading</h3><h3>Fourth level heading</h3>';
+						})();
+					</script>
 					<div class="component-code">
 						<pre></code>
 &lt;h1&gt;First level heading&lt;/h1&gt;
@@ -30,35 +51,17 @@
 				</li>
 				<li class="component">
 					<h2>Single paragraph</h2>
-					<div class="component-demo" id="single-paragraph">
-						
-<p>Lorem ipsum dolor sit amet.</p>
-
-					</div>
+					<div class="component-demo" id="single-paragraph"></div>
+					<script>
+						(function(){
+							var shadowHost = document.getElementById('#single-paragraph');
+							var shadowRoot = shadowHost.createShadowRoot();
+							shadowRoot.innerHTML = '<p>Lorem ipsum dolor sit amet.</p>';
+						})();
+					</script>
 					<div class="component-code">
 						<pre></code>
 &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
-</code></pre>
-					</div>
-				</li>
-				<li class="component">
-					<h2>Nesting</h2>
-					<div class="component-demo" id="nesting">
-						
-<div class="parent">
-  <div class="child"></div>
-  <div class="child"></div>
-  <div class="child"></div>
-</div>
-
-					</div>
-					<div class="component-code">
-						<pre></code>
-&lt;div class&#x3D;&quot;parent&quot;&gt;
-  &lt;div class&#x3D;&quot;child&quot;&gt;&lt;/div&gt;
-  &lt;div class&#x3D;&quot;child&quot;&gt;&lt;/div&gt;
-  &lt;div class&#x3D;&quot;child&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
 </code></pre>
 					</div>
 				</li>
